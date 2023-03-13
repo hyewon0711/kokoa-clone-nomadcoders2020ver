@@ -49,4 +49,8 @@ table {
 input:focus {
     outline: none;
 }
-    /*해당 부분 적용이 안됨/*
+
+a {
+    color: #2e363e;
+    text-decoration: none;
+}

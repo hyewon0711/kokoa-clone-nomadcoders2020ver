@@ -1,4 +1,8 @@
 .status-bar {
+    position: fixed; /*위치 고정*/
+    top: 0; /*상단*/
+    width: 100%; /*너비 설정*/
+    box-sizing: border-box; /*테두리와 안쪽 여백의 크기도 요소의 크기로 고려*/
     display: flex;
     justify-content: center;
     padding: 5px 3px;
