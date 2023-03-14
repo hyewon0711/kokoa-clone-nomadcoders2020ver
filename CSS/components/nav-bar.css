@@ -20,8 +20,8 @@
 
 .nav__notification {
     background-color: tomato;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border-radius: 15px;
     display: flex; /*.nav__notification 은 span 이기 때문에 해당 설정을 반드시 해야함*/
     justify-content: center;
