@@ -2,11 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
+    padding: 20px;
+    margin-top: 20px;
+
 }
 
 .screen-header__title {
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 600; /*폰트 굵게*/
 }
 
