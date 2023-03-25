@@ -1,0 +1,24 @@
+.icon-row {
+    display: flex;
+    /* 아이콘과 아래 제목을 가로 일렬로 정렬 */
+    justify-content: space-between;
+    /* 일정한 간격으로 중앙 정렬 벌림 */
+}
+
+.icon-row__icon {
+    display: flex;
+    /* 아이콘과 아래 제목을 일렬로 정렬 */
+    flex-direction: column;
+    /* 1열 아이콘 2열 제목 수직 정렬 */
+    align-items: center;
+    /* 아이콘을 자기 열에서 중앙 정렬 */
+}
+
+.icon-row__icon i { 
+    /* icon-row__icon 에 있는 아이콘만 적용한다는 [i]  */
+    font-size: 35px;
+}
+
+.icon-row__icon span {
+    margin-top: 18px;
+}
