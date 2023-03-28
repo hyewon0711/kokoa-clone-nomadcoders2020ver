@@ -18,6 +18,18 @@
     color: inherit; /*네비 색깔 링크처럼 파란색과 밑줄이 쳐지지 않게 색을 받아옴*/
 }
 
+@keyframes notificationAnimation {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: translateY(-5px) rotateY(360deg);
+    }
+    100% {
+        transform: none;
+    }
+}
+
 .nav__notification {
     background-color: tomato;
     width: 20px;
@@ -31,4 +43,34 @@
     position: absolute; /*요소를 일반적인 문서 흐름에서 제거하고, 페이지 레이아웃에 공간도 배정하지 않습니다. 대신 가장 가까운 위치 지정 조상 요소에 대해 상대적으로 배치합니다.*/
     left: 15px;
     bottom: 15px;
+    animation: notificationAnimation 1.5s ease-in-out infinite;
+}
+
+@keyframes appearBtnAnimation {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.nav__btn {
+    transform: translateY(50px);
+    opacity: 0;
+    animation: appearBtnAnimation 0.3s ease-in-out forwards;
+}
+
+.nav__btn:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.nav__btn:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.nav__btn:last-child {
+    animation-delay: 0.8s;
 }
